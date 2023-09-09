@@ -7,5 +7,8 @@ for(let i = 0; i < 16; i++){
         const collumn = document.createElement("div");
         collumn.classList.add("collumn", `${j}`);
         row.appendChild(collumn);
+        collumn.addEventListener("mouseover", (e) => {
+            e.target.style.backgroundColor= "black";
+        });
     }
 }
